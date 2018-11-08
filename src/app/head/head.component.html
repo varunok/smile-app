@@ -1,0 +1,11 @@
+<div class="header-main">
+  <div class="logo-wraper">
+    <div class="logo-img">
+      <svg-icon src="assets/images/gestures.svg"
+                [svgStyle]="{ 'width.px':40, 'height.px':40 }"></svg-icon>
+    </div>
+    <div [innerHTML]="getEnLogo() | safe: 'html'"></div>
+  </div>
+  <div [innerHTML]="getCenterLogo() | safe: 'html'" class=""></div>
+  <div [innerHTML]="getUaLogo() | safe: 'html'" class=""></div>
+</div>
